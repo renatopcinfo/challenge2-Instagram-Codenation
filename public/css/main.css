@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+html, body {
+	height: 100%;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3.5em;
+	box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	background: #FFF;
+}
+
+.header__container {
+	height: 100%;
+	max-width: 760px;
+	padding: 0 20px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	height: 2.5em;
+}
+
+.header__button {
+	cursor: pointer;
+}
+
+.content {
+	background: #e6eee6;
+	padding-top: 55px;
+}
+
+.content__container {
+	display: flex;
+	flex-direction: column;
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.content__status {
+	display: flex;
+	align-items: center;
+	padding: 1em 0;
+	overflow-x: auto;
+}
+
+.profile__container {
+	margin-left: 1em;
+}
+
+.profile__image > *{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 2px solid white;
+}
+
+.profile__image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile__image--active {
+	background: linear-gradient(
+		45deg,
+		rgba(245,160,77,1) 0%, 
+		rgba(160,15,139,1) 100%
+	);
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+}
+
+.content__posts {
+	max-width: 95%;
+	width: 760px;
+	margin: 20px auto;
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+}
+
+.post__header {
+	height: 60px;
+	background: #FFF;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em;
+}
+
+.post__user {
+	display: flex;
+	align-items: center;
+}
+
+.post__user--img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.post__user--name {
+	color: black;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 0.7em;
+}
+
+.post__settings {
+	color: black;
+}
+
+.post__content {
+	width: 100%;
+	height: auto;
+}
+
+.post__feed {
+	padding: 0.5em 0.8em;
+	font-size: 1.5em;
+	display: flex;
+}
+
+.post__feed > div {
+	cursor: pointer;
+}
+
+.post__comment--icon {
+	margin-left: 1em;
+}
+
+.post__bookmark--icon {
+	margin-left: auto;
+}
+
+.post__likes {
+	display: flex;
+	align-items: center;
+	background-color: #efefef;
+	padding: 0.2em 0.6em;
+}
+
+.user__profile {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.user__text {
+	font-size: 0.9em;
+	margin-left: 0.6em;
+}
